@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.form-tag{
+	flex-grow: 1;
+}
+.center{
+	  width: 450px;
+	  height: 350px;
+	  box-shadow: -5px 5px 10px 0px rgba(0,0,0,0.2);
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+	  text-align: center;
+	  border-radius: 5px;
+	  backdrop-filter: blur(20px);
+}
+.h2{
+margin-top: 50px;
+width: 50%;
+}
+input{
+	 width: 80%;
+	 height: 14%;
+	 background: none;
+	 margin-top: 10px;
+     margin-bottom: 25px;
+	 border: none;
+	 border-bottom: solid 1px black;
+	 font-size: 15px;
+  padding-left: 10px;
+	 outline: none;
+}
+.submit-button{
+ 	width: 120px;
+	 height: 45px;
+	 margin-top: 10px;
+	 border: none;
+	 font-size: 20px;
+	 border-radius: 10px;
+	 outline: none;
+	 background-color: #fff000 ;
+	}
+	.login-with{
+		width: 100%;
+		margin: 20px;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.btn{
+	 margin-top: 10px;
+	 width: 130px;
+	 height: 35px;
+	 margin-top: 10px;
+	 border: none;
+	 font-size: 15px;
+	 border-radius: 10px;
+	 outline: none;
+	}
+	.fb{
+		background-color: #0866FF;
+		color: white;
+	}
+	.ggl{
+		background-color: #EA4335;
+		color: white;
+	}
+/* Responsive Design for Mobile */
+@media (max-width: 800px){
+	 .center{
+	  width: 450px;
+	  height: 550px;
+	 	 }
+	 	 
+}
