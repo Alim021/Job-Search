@@ -193,34 +193,3 @@
         }
 
 
-pipeline {
-    agent any
-
-    stages {
-        stage('Greeting') {
-            steps {
-                echo 'Welcome to pipeline'
-            }
-        }
-        
-         stage('checkout') {
-            steps {
-              sh 'git clone https://github.com/Alim021/nodejsactions.git'  
-            }
-        }
-        
-       
-         stage('Install dependencies') {
-            steps {
-              sh 'npm i'
-            }
-        }
-        
-        stage('Build Module') {
-            steps {
-              sh 'npm run test'
-            }
-        }
-        
-    }
-}
